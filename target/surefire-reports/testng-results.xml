@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[About to begin executing Suite Group of group Suite]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing Test Firefox Test]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : Sample.setUp]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : Sample.setUp]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : Sample.testCase_01]]>
+    </line>
+    <line>
+      <![CDATA[Started Executing testCase_01]]>
+    </line>
+    <line>
+      <![CDATA[Started Executing the homepage Galen Specs]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : Sample.testCase_01]]>
+    </line>
+    <line>
+      <![CDATA[Test Method resides in testSuite.Sample]]>
+    </line>
+    <line>
+      <![CDATA[Test Status: Pass]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : Sample.shutdown]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : Sample.shutdown]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing test Firefox Test]]>
+    </line>
+    <line>
+      <![CDATA[About to begin executing following method : Sample.generateReport]]>
+    </line>
+    <line>
+      <![CDATA[Completed executing following method : Sample.generateReport]]>
+    </line>
+    <line>
+      <![CDATA[About to end executing Suite Group of group Suite]]>
+    </line>
+  </reporter-output>
+  <suite name="Group of group Suite" duration-ms="14905" started-at="2016-02-29T14:28:11Z" finished-at="2016-02-29T14:28:26Z">
+    <groups>
+    </groups>
+    <test name="Firefox Test" duration-ms="14905" started-at="2016-02-29T14:28:11Z" finished-at="2016-02-29T14:28:26Z">
+      <class name="testSuite.Sample">
+        <test-method status="PASS" signature="setUp(java.lang.String, int, int)[pri:0, instance:testSuite.Sample@43496354]" name="setUp" is-config="true" duration-ms="10906" started-at="2016-02-29T14:28:11Z" finished-at="2016-02-29T14:28:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[614]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[480]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testCase_01()[pri:0, instance:testSuite.Sample@43496354]" name="testCase_01" duration-ms="3634" started-at="2016-02-29T14:28:22Z" finished-at="2016-02-29T14:28:26Z">
+        </test-method>
+        <test-method status="PASS" signature="shutdown()[pri:0, instance:testSuite.Sample@43496354]" name="shutdown" is-config="true" duration-ms="341" started-at="2016-02-29T14:28:26Z" finished-at="2016-02-29T14:28:26Z">
+        </test-method>
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:testSuite.Sample@43496354]" name="generateReport" is-config="true" duration-ms="227" started-at="2016-02-29T14:28:26Z" finished-at="2016-02-29T14:28:26Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

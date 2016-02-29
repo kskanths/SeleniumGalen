@@ -1,0 +1,256 @@
+{
+  "testId" : "3-check-synechron-mail-site-on-ie",
+  "name" : "Check Synechron Mail Site on IE",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Check Layout on mail.synechron.com",
+      "status" : "info",
+      "time" : 1455869864824,
+      "includedTags" : [ "desktop" ],
+      "sections" : [ {
+        "name" : "Main section",
+        "objects" : [ {
+          "name" : "header",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 14
+            },
+            "name" : "height\t69px",
+            "highlight" : [ "header" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 15
+            },
+            "name" : "css background-color is \"rgba(255, 221, 0, 1)\"",
+            "highlight" : [ "header" ]
+          } ]
+        }, {
+          "name" : "header_logo",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 18
+            },
+            "name" : "inside header 5 to 15px top, 0 to 15px left",
+            "highlight" : [ "header_logo", "header" ]
+          } ]
+        }, {
+          "name" : "label_emailadd",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 21
+            },
+            "name" : "text is  \"Email Address:\"",
+            "highlight" : [ "label_emailadd" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 22
+            },
+            "name" : "near textfield_email -18 to -10px top",
+            "highlight" : [ "label_emailadd", "textfield_email" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 23
+            },
+            "name" : "aligned vertically left label_password",
+            "highlight" : [ "label_emailadd", "label_password" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 24
+            },
+            "name" : "css font-size is \"11px\"",
+            "highlight" : [ "label_emailadd" ]
+          } ]
+        }, {
+          "name" : "textfield_email",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 27
+            },
+            "name" : "near label_emailadd -19 to -10px top",
+            "highlight" : [ "textfield_email", "label_emailadd" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 28
+            },
+            "name" : "aligned vertically left textfield_pwd",
+            "highlight" : [ "textfield_email", "textfield_pwd" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 29
+            },
+            "name" : "aligned vertically left checkbox_remember 4px",
+            "highlight" : [ "textfield_email", "checkbox_remember" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 30
+            },
+            "name" : "aligned vertically left button",
+            "highlight" : [ "textfield_email", "button" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "above textfield_pwd 5 to 10px",
+            "highlight" : [ "textfield_email", "textfield_pwd" ]
+          } ]
+        }, {
+          "name" : "textfield_pwd",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 34
+            },
+            "name" : "below textfield_email 5 to 10px",
+            "highlight" : [ "textfield_pwd", "textfield_email" ]
+          } ]
+        }, {
+          "name" : "table_login",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 37
+            },
+            "name" : "contains label_emailadd, label_password, textfield_email, textfield_pwd, checkbox_remember, button",
+            "highlight" : [ "table_login", "label_emailadd", "label_password", "textfield_email", "textfield_pwd", "checkbox_remember", "button" ]
+          } ]
+        }, {
+          "name" : "label_password",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 40
+            },
+            "name" : "text is  \"Password:\"",
+            "highlight" : [ "label_password" ]
+          } ]
+        }, {
+          "name" : "button",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 43
+            },
+            "name" : "css font-family contains \"rial\"",
+            "highlight" : [ "button" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 44
+            },
+            "name" : "width 50px",
+            "highlight" : [ "button" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 45
+            },
+            "name" : "height 15 to 25px",
+            "highlight" : [ "button" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "textfield_pwd" : {
+          "area" : [ 174, 192, 147, 18 ]
+        },
+        "header_logo" : {
+          "area" : [ 15, 15, 137, 37 ]
+        },
+        "label_emailadd" : {
+          "area" : [ 60, 167, 92, 13 ]
+        },
+        "button" : {
+          "area" : [ 174, 240, 50, 20 ]
+        },
+        "textfield_email" : {
+          "area" : [ 174, 167, 147, 18 ]
+        },
+        "label_password" : {
+          "area" : [ 60, 195, 64, 13 ]
+        },
+        "table_login" : {
+          "area" : [ 45, 143, 507, 136 ]
+        },
+        "header" : {
+          "area" : [ 0, 0, 598, 69 ]
+        },
+        "checkbox_remember" : {
+          "area" : [ 178, 220, 12, 13 ]
+        }
+      },
+      "screenshot" : "layout-5-screenshot.png",
+      "type" : "layout"
+    }, {
+      "name" : "Check Layout on Quarantine Site",
+      "status" : "info",
+      "time" : 1455869865607,
+      "includedTags" : [ "desktop" ],
+      "sections" : [ {
+        "name" : "Main section",
+        "objects" : [ {
+          "name" : "header",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/Quarantine.gspec",
+              "lineNumber" : 7
+            },
+            "name" : "text is \"Quarantine Manager Login\"",
+            "highlight" : [ "header" ]
+          } ]
+        }, {
+          "name" : "QuarantineLoginbox",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/Quarantine.gspec",
+              "lineNumber" : 10
+            },
+            "name" : "contains header",
+            "highlight" : [ "QuarantineLoginbox", "header" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "QuarantineLoginbox" : {
+          "area" : [ 140, 100, 300, 200 ]
+        },
+        "header" : {
+          "area" : [ 140, 100, 300, 71 ]
+        }
+      },
+      "screenshot" : "layout-6-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

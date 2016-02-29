@@ -1,0 +1,460 @@
+<html>
+    <head>
+        <title>Galen Reports</title>
+        <link rel="stylesheet" type="text/css" href="report.css"></link>
+        <script src="jquery-1.11.2.min.js"></script>
+        <script src="handlebars-v2.0.0.js"></script>
+        <script src="galen-report.js"></script>
+        <script>
+var reportData = {
+  "testId" : "1-check-synechron-mail-site-on-firefox",
+  "name" : "Check Synechron Mail Site on Firefox",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Check Layout on mail.synechron.com",
+      "status" : "error",
+      "time" : 1456736304235,
+      "includedTags" : [ "desktop" ],
+      "sections" : [ {
+        "name" : "Main section",
+        "objects" : [ {
+          "name" : "header",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 14
+            },
+            "name" : "height 69px",
+            "errors" : [ "\"header\" height is 56px instead of 69px" ],
+            "highlight" : [ "header" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 15
+            },
+            "name" : "css background-color is \"rgba(255, 221, 0, 1)\"",
+            "highlight" : [ "header" ]
+          } ]
+        }, {
+          "name" : "header_logo",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 18
+            },
+            "name" : "inside header 5 to 15px top, 0 to 15px left",
+            "highlight" : [ "header_logo", "header" ]
+          } ]
+        }, {
+          "name" : "label_emailadd",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 21
+            },
+            "name" : "text is  \"Email Address:\"",
+            "highlight" : [ "label_emailadd" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 22
+            },
+            "name" : "near textfield_email -18 to -10px top",
+            "highlight" : [ "label_emailadd", "textfield_email" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 23
+            },
+            "name" : "aligned vertically left label_password",
+            "highlight" : [ "label_emailadd", "label_password" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 24
+            },
+            "name" : "css font-size is \"11px\"",
+            "highlight" : [ "label_emailadd" ]
+          } ]
+        }, {
+          "name" : "textfield_email",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 27
+            },
+            "name" : "near label_emailadd -19 to -10px top",
+            "highlight" : [ "textfield_email", "label_emailadd" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 28
+            },
+            "name" : "aligned vertically left textfield_pwd",
+            "highlight" : [ "textfield_email", "textfield_pwd" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 29
+            },
+            "name" : "aligned vertically left checkbox_remember 4px",
+            "highlight" : [ "textfield_email", "checkbox_remember" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 30
+            },
+            "name" : "aligned vertically left button",
+            "highlight" : [ "textfield_email", "button" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "above textfield_pwd 5 to 10px",
+            "highlight" : [ "textfield_email", "textfield_pwd" ]
+          } ]
+        }, {
+          "name" : "textfield_pwd",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 34
+            },
+            "name" : "below textfield_email 5 to 10px",
+            "highlight" : [ "textfield_pwd", "textfield_email" ]
+          } ]
+        }, {
+          "name" : "table_login",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 37
+            },
+            "name" : "contains label_emailadd, label_password, textfield_email, textfield_pwd, checkbox_remember, button",
+            "highlight" : [ "table_login", "label_emailadd", "label_password", "textfield_email", "textfield_pwd", "checkbox_remember", "button" ]
+          } ]
+        }, {
+          "name" : "label_password",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 40
+            },
+            "name" : "text is  \"Password:\"",
+            "highlight" : [ "label_password" ]
+          } ]
+        }, {
+          "name" : "button",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 43
+            },
+            "name" : "css font-family contains \"rial\"",
+            "highlight" : [ "button" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 44
+            },
+            "name" : "width  50px",
+            "highlight" : [ "button" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homepage.gspec",
+              "lineNumber" : 45
+            },
+            "name" : "height 15 to 25px",
+            "highlight" : [ "button" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "textfield_pwd" : {
+          "area" : [ 177, 183, 147, 20 ]
+        },
+        "header_logo" : {
+          "area" : [ 15, 15, 24, 24 ]
+        },
+        "label_emailadd" : {
+          "area" : [ 61, 160, 97, 13 ]
+        },
+        "button" : {
+          "area" : [ 177, 232, 50, 20 ]
+        },
+        "textfield_email" : {
+          "area" : [ 177, 157, 147, 20 ]
+        },
+        "label_password" : {
+          "area" : [ 61, 187, 66, 13 ]
+        },
+        "table_login" : {
+          "area" : [ 46, 136, 507, 135 ]
+        },
+        "header" : {
+          "area" : [ 0, 0, 598, 56 ]
+        },
+        "checkbox_remember" : {
+          "area" : [ 181, 212, 13, 13 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    }, {
+      "name" : "Check Layout on Quarantine Site",
+      "status" : "info",
+      "time" : 1456736306246,
+      "includedTags" : [ "desktop" ],
+      "sections" : [ {
+        "name" : "Main section",
+        "objects" : [ {
+          "name" : "header",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/Quarantine.gspec",
+              "lineNumber" : 7
+            },
+            "name" : "text is \"Quarantine Manager Login\"",
+            "highlight" : [ "header" ]
+          } ]
+        }, {
+          "name" : "QuarantineLoginbox",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/Quarantine.gspec",
+              "lineNumber" : 10
+            },
+            "name" : "contains header",
+            "highlight" : [ "QuarantineLoginbox", "header" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "QuarantineLoginbox" : {
+          "area" : [ 141, 100, 300, 200 ]
+        },
+        "header" : {
+          "area" : [ 141, 100, 300, 71 ]
+        }
+      },
+      "screenshot" : "layout-2-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+};
+        </script>
+        <script>
+
+            $(function () {
+                var galenReport = createGalenReport();
+                galenReport.render("main", reportData);
+            });
+        </script>
+    </head>
+    <body>
+        <script id="report-tpl" type="text/x-handlebars-template">
+            <ul class="report-nodes">
+            {{#each report.nodes}}
+                {{renderNode this}}
+            {{/each}}
+            </ul>
+        </script>
+        <script id="report-node-tpl" type="text/x-handlebars-template">
+            <li>
+                <span class="report-time">{{formatReportTime time}}</span>
+                <a class="expand-link node-expand-button node-status-{{status}} contains-children-{{hasChildElements nodes}} collapsed" href="#">{{status}}</a>
+                <div class="node-name node-status-{{status}}">{{name}}</div>
+                {{#if stacktrace}}
+                    <div class="stacktrace">{{stacktrace}}</div>
+                {{/if}}
+                {{#if attachments}}
+                    <ul class="report-node-attachments">
+                        {{#each attachments}}
+                            <li>
+                                <a class="icon-sprite-before node-attachment" href="{{this}}">{{this}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                {{/if}}
+                <div class="node-details expand-container">
+                    {{#if nodes}}
+                        <ul class="report-nodes">
+                            {{#each nodes}}
+                                {{renderNode this}}
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </div>
+            </li>
+        </script>
+        <script id="report-node-text-tpl" type="text/x-handlebars-template">
+            <li>
+                <div class="node-simple-text">
+                    {{name}}
+                </div>
+            </li>
+        </script>
+        <script id="report-layout-tpl" type="text/x-handlebars-template">
+            <li>
+                <span class="report-time">{{formatReportTime time}}</span>
+                <a class="expand-link node-expand-button node-status-label node-status-info contains-children-true collapsed" href="#">LAYOUT</a>
+                <div class="node-name">{{name}}</div>
+                <div class="node-details expand-container">
+                    {{renderSublayout this}}
+                </div>
+            </li>
+        </script>
+        <script id="report-layout-sublayout-tpl" type="text/x-handlebars-template">
+            <div class="layout-report" data-layout-id="{{layoutId}}" data-screenshot="{{screenshot}}">
+                <ul class="layout-sections">
+                    {{#each sections}}
+                        {{renderLayoutSection this}}
+                    {{/each}}
+                </ul>
+            </div>
+        </script>
+        <script id="report-layout-section-tpl" type="text/x-handlebars-template">
+            <li>
+                <a class="layout-section icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                <div class="layout-details expand-container">
+                    {{#if sections}}
+                        <ul class="layout-sections">
+                        {{#each sections}}
+                            {{renderLayoutSection this}}
+                        {{/each}}
+                        </ul>
+                    {{/if}}
+                    {{#if objects}}
+                        <ul class="layout-objects">
+                            {{#each objects}}
+                                {{renderLayoutObject this}}
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </div>
+            </li>
+        </script>
+        
+        <script id="report-layout-object-tpl" type="text/x-handlebars-template">
+            <li>
+                <a class="layout-object icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                <ul class="layout-checks expand-container">
+                    {{#each specs}}
+                        {{renderLayoutCheck this}}
+                    {{/each}}
+                    {{#each specGroups}}
+                    <li>
+                        <a class="layout-specgroup icon-sprite-before expand-link contains-children-true" href="#">{{name}}</a>
+                        <ul class="layout-checks expand-container">
+                            {{#each specs}}
+                                {{renderLayoutCheck this}}
+                            {{/each}}
+                        </ul>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
+        </script>
+        <script id="report-layout-check-tpl" type="text/x-handlebars-template">
+            <li>
+            <a class="layout-check icon-sprite-before layout-check-status-{{status}}" href="#" 
+                data-highlight-objects="{{commaSeparated highlight}}"
+                title="{{place.filePath}}#{{place.lineNumber}}"
+                >{{name}}</a>
+
+                {{#if errors}}
+                    <div class="layout-check-error-message">
+                        {{#if imageComparison}}
+                        <a class="image-comparison-link" 
+                            data-actual-image="{{imageComparison.actualImage}}"
+                            data-expected-image="{{imageComparison.expectedImage}}"
+                            data-map-image="{{imageComparison.comparisonMapImage}}"
+                            href="#">Show image comparison</a>
+                        {{/if}}
+                        <div class="layout-check-error-message-text">
+                            <ul>
+                            {{#each errors}}
+                                <li>{{this}}</li>
+                            {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                {{/if}}
+
+                {{#if subLayout}}
+                    {{renderSublayout subLayout}}
+                {{/if}}
+            </li>
+        </script>
+        <script id="screenshot-popup-tpl" type="text/x-handlebars-template">
+            <div class="screenshot-canvas">
+                <img src="{{screenshot}}"/>
+                {{#each objects}}
+                <div class="canvas-rect" style="left: {{area.left}}px; top: {{area.top}}px; width: {{area.width}}px; height: {{area.height}}px; border-color: {{color}};">
+                    <div class="canvas-rect-wrapper">
+                        <div class="canvas-rect-hint" style="background: {{color}};">{{@key}}</div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </script>
+        <script id="image-comparison-tpl" type="text/x-handlebars-template">
+            <div class="image-comparison">
+                <h5>Actual</h5>
+                <img src="{{actual}}"/>
+
+                <h5>Expected</h5>
+                <img src="{{expected}}"/>
+
+                <h5>Comparison map</h5>
+                <img src="{{map}}"/>
+            </div>
+        </script>
+
+
+        <div id="menu">
+            <ul>
+                <li><a class="menu-op-expand-all" href="#">Expand All</a></li>
+                <li><a class="menu-op-collapse-all" href="#">Collapse All</a></li>
+                <li><a class="menu-op-expand-errors" href="#">Expand Errors</a></li>
+            </ul>
+        </div>
+        <h2>Check Synechron Mail Site on Firefox</h2>
+        <div id="main"></div>
+        <div id="screen-shadow"></div>
+        <div id="popup" class="popup">
+            <div class="popup-wrapper">
+                <a class="popup-close-link" href="#">close</a>
+                <div class="popup-content"></div>
+            </div>
+        </div>
+        <div id="notification" class="notification">
+            <div class="notification-wrapper">
+                <a class="notification-close-link" href="#">close</a>
+                <div class="notification-summary"></div>
+                <div class="notification-message"></div>
+            </div>
+        </div>
+    </body>
+</html>

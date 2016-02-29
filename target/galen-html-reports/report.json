@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "Check Synechron Mail Site on Firefox",
+    "startedAt" : 1456736304235,
+    "endedAt" : 1456736304235,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 19,
+      "errors" : 1,
+      "warnings" : 0,
+      "total" : 20
+    },
+    "testId" : "1-check-synechron-mail-site-on-firefox",
+    "failed" : true,
+    "duration" : 0
+  } ]
+}

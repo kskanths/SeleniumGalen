@@ -1,0 +1,10 @@
+@objects
+   header		xpath	//h1[text()='Quarantine Manager Login']
+   QuarantineLoginbox	id	loginbox
+
+= Main section =
+   header:
+    	text is "Quarantine Manager Login"
+
+   QuarantineLoginbox:
+	contains header

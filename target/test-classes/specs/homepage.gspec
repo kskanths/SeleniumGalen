@@ -1,0 +1,45 @@
+@objects
+   header		css	td.header
+   header_logo		xpath	//img[@src='http://www.synechron.com/images/synLogo.jpg']
+   label_emailadd	xpath	//strong[text()='Email Address:']
+   label_password	xpath	//strong[text()='Password:']
+   textfield_email	css	input[name='user_name']
+   table_login		xpath	//table[form[@name='loginForm']]
+   textfield_pwd	css	input[name='password']
+   checkbox_remember	id	remember
+   button		xpath	//input[@value='Log-In']
+
+= Main section =
+   header:
+    height ${header.height}
+	css background-color is "rgba(255, 221, 0, 1)"
+
+   header_logo:
+	inside header 5 to 15px top, 0 to 15px left
+	
+   label_emailadd:
+	text is  "Email Address:"
+	near textfield_email -18 to -10px top
+	aligned vertically left label_password
+	css font-size is "11px"
+
+   textfield_email:
+	near label_emailadd -19 to -10px top
+	aligned vertically left textfield_pwd
+	aligned vertically left checkbox_remember 4px
+	aligned vertically left button
+	above textfield_pwd 5 to 10px
+
+   textfield_pwd:
+	below textfield_email 5 to 10px
+
+   table_login:
+	contains label_emailadd, label_password, textfield_email, textfield_pwd, checkbox_remember, button
+
+   label_password:
+	text is  "Password:"
+
+   button:
+	css font-family contains "rial"
+	width  ${button.width}
+	height ${button.height}

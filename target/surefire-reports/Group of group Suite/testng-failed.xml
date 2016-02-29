@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Group of group Suite]">
+  <parameter name="height" value="480"/>
+  <parameter name="width" value="614"/>
+  <parameter name="browser" value="Firefox"/>
+  <listeners>
+    <listener class-name="testSuite.Listener"/>
+  </listeners>
+  <test name="Firefox Test(failed)" preserve-order="true">
+    <parameter name="height" value="480"/>
+    <parameter name="width" value="614"/>
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testSuite.Sample">
+        <methods>
+          <include name="testCase_01"/>
+          <include name="setUp"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

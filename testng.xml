@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Group of group Suite" verbose="1">
+	<!-- <test name="Group of group Test"> <classes> <class name="testSuite.Sample" 
+		/> <class name="testSuite.WelcomePageTest" /> </classes> </test> -->
+	<listeners>
+		<listener class-name="testSuite.Listener"></listener>
+	</listeners>
+	<test name="Firefox Test">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="width" value="614" />
+		<parameter name="height" value="480" />
+		<classes>
+			<class name="testSuite.Sample" />
+		</classes>
+	</test>
+	<!-- <test name="Chrome Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="width" value="614" />
+		<parameter name="height" value="480" />
+		<classes>
+			<class name="testSuite.Sample" />
+		</classes>
+	</test>
+	<test name="Internet Explorer Test">
+		<parameter name="browser" value="IE" />
+		<parameter name="width" value="614" />
+		<parameter name="height" value="480" />
+		<classes>
+			<class name="testSuite.Sample" />
+		</classes>
+	</test> -->
+</suite>
